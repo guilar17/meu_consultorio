@@ -16,7 +16,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	
+	cadastro_meu_consultorio.class,	
 	
 })
 
