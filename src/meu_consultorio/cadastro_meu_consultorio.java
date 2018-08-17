@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByLinkText;
 
 import Mapa.Mapeamento;
 
@@ -26,6 +28,7 @@ public class cadastro_meu_consultorio extends executa_meu_consultorio {
 		driver.manage().window().maximize();
 		driver.get(Mapeamento.meu_consultorio);
 		driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
+		driver.findElement(By.linkText("Crie uma conta")).click();
 		
 		
 		
